@@ -56,7 +56,19 @@ def print_maps():
     print(maps[7], end='')
     print(maps[8])
 
+def step_maps(step,simbol):
+    ind = maps.index(step)
+    maps[ind] = simbol
 
+def get_result():
+    winner = ''
+
+    for i in win:
+        if maps[i[0]] == 'X' and maps[i[1]] == 'X' and maps[i[2]] == 'X':
+            winner ='X'
+        if maps[i[0]] == 'O' and maps[i[1]] == 'O' and maps[i[2]] == 'O':
+            winner = 'O'
+    return winner
 
 
 
