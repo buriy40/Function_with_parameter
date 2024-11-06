@@ -61,7 +61,7 @@ def step_maps(step,simbol):
     maps[ind] = simbol
 
 def get_result():
-    winner = ''
+    winner =''
 
     for i in win:
         if maps[i[0]] == 'X' and maps[i[1]] == 'X' and maps[i[2]] == 'X':
